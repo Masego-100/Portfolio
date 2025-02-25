@@ -3410,14 +3410,15 @@ img.u-pull-left {
     margin         : 0;
     vertical-align : bottom;
     transition: transform 0.5s ease-in-out;
+    float: left;
    /* --------------------------------------------------------------------
  * ## REMEMBER TO FIX THE Transition 
  * -------------------------------------------------------------------- */
 }
 
 .about-info__pic:hover{
-    width: 589px;
-    height: 645px;
+    width: 540px;
+    height: 650px;
     
 }
 
@@ -3781,6 +3782,8 @@ img.u-pull-left {
     color            : rgba(0, 0, 0, 0.75);
     overflow-y       : auto;
     position         : relative;
+    height: auto;
+    width: auto;
 }
 
 .modal-popup img {
@@ -4064,7 +4067,20 @@ img.u-pull-left {
 .contact-bottom .text-pretitle {
     margin-bottom : var(--vspace-0_125);
 }
+.contact-social{
+    list-style-type: none;
+    padding-left: 5px;
+}
 
+.social{
+    display: block;
+    margin-bottom: 10px;
+    
+}
+.scholarjobsync{
+    width: auto;
+    height: auto;
+}
 .contact-links,
 .contact-social {
     font-size   : var(--text-md);
