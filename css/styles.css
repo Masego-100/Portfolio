@@ -587,6 +587,19 @@ textarea {
 
 /* row 
  */
+
+ .contact-social {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.contact-social li {
+    display: flex;
+    align-items: center; /* Align icon and text */
+    gap: 10px; /* Space between icon and text */
+}
+
 .row {
     width     : 92%;
     max-width : var(--width-grid-max);
@@ -661,22 +674,22 @@ textarea {
  * ## large screen devices 
  * -------------------------------------------------------------------- */
 .lg-1 {
-    flex  : none;
+   
     width : 8.33333%;
 }
 
 .lg-2 {
-    flex  : none;
+    
     width : 16.66667%;
 }
 
 .lg-3 {
-    flex  : none;
+   
     width : 25%;
 }
 
 .lg-4 {
-    flex  : none;
+  
     width : 33.33333%;
 }
 
@@ -716,7 +729,8 @@ textarea {
 }
 
 .lg-12 {
-    flex  : none;
+    display: block;
+    grid-template-columns: repeat(1,1fr);
     width : 100%;
 }
 
@@ -755,6 +769,11 @@ textarea {
     width : 100%;
 }
 
+.contact-me{
+    font-size: 35px;
+    margin-right: 200px;
+}
+
 /* --------------------------------------------------------------------
  * ## medium screen devices 
  * -------------------------------------------------------------------- */
@@ -780,8 +799,8 @@ textarea {
     }
 
     .md-5 {
-        flex  : none;
-        width : 41.66667%;
+       display: block;
+        width :30%
     }
 
     .md-6 {
@@ -2694,8 +2713,16 @@ img.u-pull-left {
     font-size   : 20px;
     line-height : 1.0740;
     margin-top  : 0;
+    
+    animation: 
+    typing 3s ,
+    cursor .5s  infinite ;
+    
 }
-
+@keyframes typing{
+    from {width: 0;}
+    to { width: 100%; }
+}
 /* ------------------------------------------------------------------- 
  * ## MailtoUI style overrides
  * ------------------------------------------------------------------- */
@@ -2764,6 +2791,9 @@ img.u-pull-left {
     font-size      : var(--mailtoui-button-text-size);
     text-transform : none;
     letter-spacing : 0;
+}
+.contact-me{
+    font-size: 20px;
 }
 
 .mailtoui-button:focus .mailtoui-button-content {
